@@ -1,10 +1,11 @@
 html * {
     font-family: 'Courier New', Courier, monospace;
+    margin:0;
+    padding:0;
 }
 
 .header {
     display:flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     background-color: #1F2937;
 }
@@ -20,11 +21,11 @@ html * {
 .header-link {
     display: flex;
     flex: 1;
-    flex-direction: row;
     font-size: 18px;
     color: #E5E7EB;
-    margin: 20px;
-    gap: 40px;
+    margin: 20px;   
+    gap: 20px;
+    padding-right: 200px;
 }
 
 .hero-main-text{
@@ -50,10 +51,13 @@ html * {
 button{
     background-color:#3882F6;
     color:white;
-    border:none;
     font-size: 18px;
     font-weight: bold;
     padding: 10px 20px;
+}
+
+.bordered{
+    border:none;
     border-radius: 12px;
 }
 
@@ -63,6 +67,7 @@ button{
     background-color: gray;
     justify-content: center;
     align-items: center;
+    margin-right: 200px;
 }
 
 .information{
@@ -85,3 +90,35 @@ button{
     flex-wrap: wrap;
 }
 
+.quote-section{
+    background-color: #E5E7EB;
+    display:flex;
+    flex-direction: column;
+}
+
+.quote{
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    margin: 40px;
+    padding: 150px 200px 0;
+}
+
+.quote-author{
+    font-size: 24px;
+    align-self:flex-end;
+    font-weight: bold;
+    padding-right: 200px;
+}
+
+.call-to-action{
+    display:flex;
+    background-color: #3882F6;
+    height: 100px;
+    width: 800px;
+    margin: 100px auto;
+}
+
+.call-to-action-text{
+    align-self: center;
+}
